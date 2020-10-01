@@ -456,8 +456,156 @@ int main()
 
     case 2:
 
-        std::cout << "\n******************** SQUARE *******************\n"
+        
+            
+            std::cout << "\n******************** SQUARE *******************\n"
                   << std::endl;
+
+        cout << "Enter 1 to find Area of Square" << endl;
+        cout << "Enter 2 to find Side of Square" << endl;
+        cout << "Enter 3 to find Diagonal of Square" << endl;
+
+        int value; //above value will be stored in this for if statement
+        cout << "\nEnter the above value ";
+        cin >> value;
+        cout<<"\n"<<endl;
+
+        if (value == 1)
+        {
+            /********************* Area of Square *******************/
+
+            cout << "********************* Area of Square *******************" << endl;
+
+            cout << "\nEnter 1 if side of Square is given" << endl;
+            cout << "Enter 2 if diagonal of Square is given" << endl;
+
+            int num;
+            cout << "\nEnter the above value ";
+            cin >> num;
+            cout << "\n"
+                 << endl;
+
+            if (num == 1)
+            {
+                cout << "To find:- Area of Square?\n"
+                     << endl;
+                double side;
+                cout << "Given:- Side of Square = ";
+                cin >> side;
+
+                cout << "\nSoln:-" << endl;
+
+                double area = side * side;
+
+                cout << "Area of Square = Side*Side   .......(formula)" << endl;
+                cout << "Area of Square = " << side << "*" << side << endl;
+                cout << "Area of Square = " << area << endl;
+
+                cout << "\n Ans:- Area of Square is " << area << endl;
+                cout << "\n"
+                     << endl;
+            }
+
+            else if (num == 2)
+            {
+                cout << "To find:- Area of square?\n"
+                     << endl;
+                cout << "Given:- Diagonal of square =  ";
+                double diagonal;
+                cin >> diagonal;
+
+                double area = (diagonal * diagonal) / 2;
+                cout << "Soln:-\n"
+                     << endl;
+                cout << "Area of square = 1/2(diagonal*diagonal)   .......(formula)" << endl;
+                cout << "Area of square = 1/2*(" << diagonal << "*" << diagonal << ")" << endl;
+                cout << "Area of square = 1/2*(" << diagonal * diagonal << ")" << endl;
+                cout << "Area of square = " << area << endl;
+                cout << "\nAns:- Area of square is " << area << endl;
+                cout << "\n"
+                     << endl;
+            }
+
+            else
+            {
+
+                std::cout << "\n******************** EROR! *******************\n"
+                          << std::endl;
+
+                std::cout << "You have entered wrong value." << std::endl;
+                std::cout << "Please enter above value.\n"
+                          << std::endl;
+            }
+        }
+
+        else if (value == 2)
+        {
+            // *********************** Side of Square ********************
+
+            cout<<"\n*********************** Side of Square ********************"<<endl;
+
+            cout<<"\nEnter 1 if Area of square is given"<<endl;
+            cout<<"Enter 2 if diagonal of square is given\n"<<endl;
+
+            int num;
+            cout<<"Enter the above value ";
+            cin>>num;
+
+            if (num == 1)
+            {
+                
+                cout<<"\nTo find:- side of square?"<<endl;
+                cout<<"Given:- Area of square =";
+                double area;
+                cin>>area;
+
+                double side = sqrt(area);
+                cout<<"Soln:- "<<endl;
+
+                cout<<"side = root of Area of Square ........(formula)"<<endl;
+                cout<<"side = root of "<<area <<endl;
+                cout<<"side = "<<side<<endl; 
+                cout<<"\n Ans:- Side of square is "<<side <<endl;
+                cout<<"\n"<<endl;
+
+             
+
+
+            }
+            
+            else if (num == 2)
+            {
+                
+            }
+
+            else
+            {
+                
+            }
+            
+
+
+
+
+        }
+
+        else if (value == 3)
+        {
+            // *********************** Diagonal of Square ************************
+        }
+
+        else
+        {
+            //************************* error *************************
+
+            std::cout << "\n******************** EROR! *******************\n"
+                      << std::endl;
+
+            std::cout << "You have entered wrong value." << std::endl;
+            std::cout << "Please enter above value.\n"
+                      << std::endl;
+        }
+            
 
         break;
 
